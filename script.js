@@ -2,12 +2,19 @@ let cartContainer = document.getElementById("cart-container");
 let addButton = document.getElementById("addButton");
 let removeButton = document.getElementById("removeButton");
 let totalPrice = document.getElementById("total-price");
-
+let addBtn2 = document.getElementById("addBtn2");
+let rmvBtn2 = document.getElementById("rmvBtn2")
+let addBtn22 = document.getElementById("addBtn22");
+let remBtn22 = document.getElementById("remBtn22");
 let cartItem = []
 let totalPackage = 0;
 addButton.addEventListener("click" , addItem);
 
 removeButton.addEventListener("click",removeItem)
+addBtn2.addEventListener("click" ,addItem )
+rmvBtn2.addEventListener("click", removeItem)
+addBtn22.addEventListener("click", addItem)
+remBtn22.addEventListener("click", removeItem)
 
 function addItem(){
     const item ={
